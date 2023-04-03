@@ -1,0 +1,59 @@
+GET http://localhost:5000/kategori
+
+###
+GET http://localhost:5000/kategori/1
+
+###
+POST http://localhost:5000/kategori
+Content-Type: application/json
+
+{
+    "nama": "Bahan Bangunan"
+}
+
+###
+PATCH http://localhost:5000/kategori/1
+Content-Type: application/json
+
+{
+    "nama": "Bahan Bangun"
+}
+
+###
+DELETE http://localhost:5000/barang/1
+
+# BARANG
+###
+GET http://localhost:5000/barang
+
+###
+GET http://localhost:5000/barang/1
+
+###
+POST http://localhost:5000/barang
+Content-Type: application/json
+
+{
+    "nama": "Semen Singa merah",
+    "tipe": "50kg",
+    "stock": 150,
+    "harga_beli": 45000,
+    "harga_jual": 50000,
+    "kategoriId": 1
+}
+
+###
+PATCH http://localhost:5000/barang/1
+Content-Type: application/json
+
+{
+    "nama": "Semen Gresik",
+    "tipe": "50kg",
+    "stock": 100,
+    "harga_beli": 50000,
+    "harga_jual": 55000,
+    "kategoriId": 1
+}
+
+###
+DELETE http://localhost:5000/barang/1
